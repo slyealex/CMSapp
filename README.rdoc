@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run this app, clone the repo, bundle install then run the rails server and you are good to go!
 
-Things you may want to cover:
+This is a CMS app template designed to work with the following functions
 
-* Ruby version
+* Allow account creation
 
-* System dependencies
+* Allow session control (Login)
 
-* Configuration
+* Allow content creation
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Admin rights for adding content to main page
 
 
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.

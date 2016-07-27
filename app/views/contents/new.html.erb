@@ -2,21 +2,29 @@
 
   <h2>Add Content</h2>
 
-  <%= bootstrap_form_for(@content) do |f| %>
-    <div class="field">
-      <%= f.label :title %>
-      <%= f.text_field :title %>
+  <%= form_for @content, :html => {:class => "form-horizontal center"} do |f| %>
+    <div class="form-group">
+      <%= f.label :title, class: "control-label" %>
+      <div class="col-md-8">
+        <%= f.text_field :title, class: "form-control" %>
+      </div>
     </div>
-    <div class="field">
-      <%= f.label :content %>
-      <%= f.text_area :content %>
+    <div class="form-group">
+      <%= f.label :content, class: "control-label" %>
+      <div class="col-md-8">
+        <%= f.text_area :content, class: "form-control" %>
+      </div>
     </div>
-    <div class="field">
-      <%= f.label :url %>
-      <%= f.text_field :url %>
+    <div class="form-group">
+      <%= f.label :url, class: "control-label" %>
+      <div class="col-md-8">
+        <%= f.text_field :url, class: "form-control" %>
+      </div>
     </div>
-    <div class="action">
-      <%= f.submit "Submit Content" %>
+    <div class="form-group">
+      <div class="col-md-4 control-label">
+        <%= f.submit "Submit Content", class: "btn btn-defualt btn-primary" %>
+      </div>
     </div>
   <% end %>
 

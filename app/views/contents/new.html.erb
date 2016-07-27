@@ -1,2 +1,23 @@
-<h1>Contents#new</h1>
-<p>Find me in app/views/contents/new.html.erb</p>
+<div class="container">
+
+  <h2>Add Content</h2>
+
+  <%= bootstrap_form_for(@content) do |f| %>
+    <div class="field">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :content %>
+      <%= f.text_area :content %>
+    </div>
+    <div class="field">
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+    </div>
+    <div class="action">
+      <%= f.submit "Submit Content" %>
+    </div>
+  <% end %>
+
+</div>

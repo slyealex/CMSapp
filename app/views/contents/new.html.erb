@@ -2,26 +2,26 @@
 
   <h2>Add Content</h2>
 
-  <%= form_for @content, :html => {:class => "form-horizontal center"} do |f| %>
-    <div class="form-group">
-      <%= f.label :title, class: "control-label" %>
-      <div class="col-md-8">
+  <%= form_for @content do |f| %>
+    <div class="col-md-8 form-group">
+      <%= f.label :title %>
+      <div>
         <%= f.text_field :title, class: "form-control" %>
       </div>
     </div>
-    <div class="form-group">
-      <%= f.label :content, class: "control-label" %>
-      <div class="col-md-8">
+    <div class="col-md-8 form-group">
+      <%= f.label :content %>
+      <div>
         <%= f.text_area :content, class: "form-control" %>
       </div>
     </div>
-    <div class="form-group">
-      <%= f.label :url, class: "control-label" %>
-      <div class="col-md-8">
+    <div class="col-md-8 form-group">
+      <%= f.label :url %>
+      <div>
         <%= f.text_field :url, class: "form-control" %>
       </div>
     </div>
-    <div class="form-group">
+    <div class="col-md-8 form-group">
       <div class="col-md-4 control-label">
         <%= f.submit "Submit Content", class: "btn btn-defualt btn-primary" %>
       </div>

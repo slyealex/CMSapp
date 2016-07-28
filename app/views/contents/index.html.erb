@@ -6,7 +6,7 @@
   <% @contents.each do |content| %>
       <h2><%= content.title %></h2>
       <p><%= content.content %></p>
-      <h3><a href="<%= content.url %>">Content Url</a></h3>
+      <h3><a href="<%= content.url %>"><%= content.url %></a></h3>
   <% end %>
 
 

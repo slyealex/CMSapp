@@ -2,28 +2,28 @@
   <h1>Sign Up</h1>
 
   <%= form_for @user do |f| %>
-    <div class="field">
+    <div class="form-group col-md-8">
       <%= f.label :name %>
-      <%= f.text_field :name %>
+      <%= f.text_field :name, class: "form-control" %>
     </div>
-    <div class="field">
+    <div class="form-group col-md-8">
       <%= f.label :email %>
-      <%= f.email_field :email %>
+      <%= f.email_field :email, class: "form-control" %>
     </div>
-    <div class="field">
+    <div class="form-group col-md-8">
       <%= f.label :location %>
-      <%= f.text_field :location %>
+      <%= f.text_field :location, class: "form-control" %>
     </div>
-    <div class="field">
+    <div class="form-group col-md-8">
       <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%= f.password_field :password, class: "form-control" %>
     </div>
-    <div class="field">
+    <div class="form-group col-md-8">
       <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
     </div>
-    <div class="actions">
-      <%= f.submit  %>
+    <div class="form-group col-md-8">
+      <%= f.submit "Sign Up", class: "btn btn-defualt btn-primary" %>
     </div>
   <% end %>
 </div>

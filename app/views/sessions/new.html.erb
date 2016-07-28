@@ -2,16 +2,16 @@
   <h1>Log In</h1>
 
   <%= form_tag sessions_path do %>
-    <div class="field">
+    <div class="form-group col-md-8">
       <%= label_tag :email %>
-      <%= text_field_tag :email %>
+      <%= text_field_tag :email, "", class: "form-control" %>
     </div>
-    <div class="field">
+    <div class="form-group col-md-8">
       <%= label_tag :password %>
-      <%= password_field_tag :password %>
+      <%= password_field_tag :password, "", class: "form-control" %>
     </div>
-    <div class="actions">
-      <%= submit_tag "Log In" %>
+    <div class="form-group col-md-8">
+      <%= submit_tag "Log In", class: "btn btn-defualt btn-primary" %>
     </div>
   <% end %>
 

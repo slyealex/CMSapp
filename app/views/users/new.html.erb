@@ -23,6 +23,13 @@
       <%= f.password_field :password_confirmation, class: "form-control" %>
     </div>
     <div class="form-group col-md-8">
+      <%= f.collection_select :role, User::ROLES, :to_s, :humanize %>
+      <% if :role ==  "Admin" %>
+        <%= f.label :ADMINCODE %>
+        <%= f.number_field :ADMINCODE, class: "form-control" %>
+      <% end %>
+    </div>
+    <div class="form-group col-md-8">
       <%= f.submit "Sign Up", class: "btn btn-defualt btn-primary" %>
     </div>
   <% end %>
